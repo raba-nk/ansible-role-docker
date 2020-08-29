@@ -4,7 +4,7 @@
 docker:
   gpg_key: "https://download.docker.com/linux/ubuntu/gpg"
   repo: "deb [arch=amd64] https://download.docker.com/linux/{{ ansible_distribution | lower }}/{{ ansible_distribution_release | lower }}/edge"
-  system_packkages:
+  system_packages:
     - "apt-transport-https"
     - "ca-certificate"
     - "curl"
