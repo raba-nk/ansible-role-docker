@@ -27,7 +27,7 @@ Example Playbook
   become_method: sudo
   
   roles:
-    - raba-nk.docker-edge
+    - raba-nk.docker
 ```
 
 License
