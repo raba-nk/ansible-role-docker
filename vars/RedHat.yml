@@ -12,5 +12,6 @@ docker:
     - "lvm2"
     - "python-setuptools"
     - "libselinux-python"
+    - "python3-pip"
   pip:
     - "docker"
