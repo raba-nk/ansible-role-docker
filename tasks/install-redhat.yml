@@ -20,6 +20,11 @@
     enablerepo: "{{ docker.edge }}"
   with_items: "{{ docker.packages }}"
 
+- name: install pip
+  easy_install:
+    name: pip
+    state: latest
+
 - name: install python packages
   pip:
     name: "{{ item }}"
