@@ -20,16 +20,14 @@
 
 - name: install the docker package
   apt:
-    name: "{{ item }}"
+    name: "{{ docker.packages }}"
     state: "present"
     update_cache: "yes"
     force: "yes"
-  with_items: "{{ docker.packages }}"
 
 - name: install the python packages
   pip:
-    name: "{{ item }}"
-  with_items: "{{ docker.pip }}"
+    name: "{{ docker.pip }}"
 
 - name: start docker and configure to start on boot
   service:

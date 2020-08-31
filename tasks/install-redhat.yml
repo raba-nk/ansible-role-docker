@@ -27,8 +27,7 @@
 
 - name: install python packages
   pip:
-    name: "{{ item }}"
-  with_items: "{{ docker.pip }}"
+    name: "{{ docker.pip }}"
 
 - name: put selinux into permissive mode
   selinux:
