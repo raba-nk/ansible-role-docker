@@ -18,7 +18,6 @@
     state: "installed"
     update_cache: "yes"
     enablerepo: "{{ docker.edge }}"
-  #with_items: "{{ docker.packages }}"
 
 - name: install pip
   easy_install:

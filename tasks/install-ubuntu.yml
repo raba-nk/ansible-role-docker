@@ -6,7 +6,6 @@
     name: "{{ docker.system_packages }}"
     state: "present"
     update_cache: "yes"
-  #with_items: "{{ docker.system_packages }}"
 
 - name: add the apt keys from a key server
   apt_key:
