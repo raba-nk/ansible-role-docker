@@ -14,11 +14,11 @@
 
 - name: install the docker packages
   yum:
-    name: "{{ item }}"
+    name: "{{ docker.packages }}"
     state: "installed"
     update_cache: "yes"
     enablerepo: "{{ docker.edge }}"
-  with_items: "{{ docker.packages }}"
+  #with_items: "{{ docker.packages }}"
 
 - name: install pip
   easy_install:
