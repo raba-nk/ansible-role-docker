@@ -17,7 +17,6 @@
   apt_repository:
     repo: "{{ docker.repo }}"
     state: present
-  become: "yes"
 
 - name: install the docker package
   apt:
